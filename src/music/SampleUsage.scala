@@ -5,10 +5,10 @@ object SampleUsage {
   def main(args: Array[String]): Unit = {
     // sample usage of the code in this project
 
-    val songs = Song.readSongsFromFile("data/song_ratings_2017.csv")
+    val songs = Song.readSongsFromFile("data/song_ratings_2021.csv")
     val k = 10
 
-    // Plays the top 10 songs as rated by students in 2017
+    // Plays the top 10 songs as rated by students in Spring 2021
 //    val numberOfExtraRatings: Int = 2
 //    val valueOfExtraRatings: Int = 3
 //    val bayesianRatingFunction: Song => Double = (song: Song) => song.bayesianRating(numberOfExtraRatings, valueOfExtraRatings)
