@@ -2,7 +2,7 @@ package neuralnetwork
 
 object NeuralNetwork{
 
-  // TODO: AO2
+  // Optional Objective: You can safely ignore this file if you are not completing the optional objective
 
   def costFunction(trainingData: Map[List[Double], String]): NeuralNetwork => Double = {
     null
