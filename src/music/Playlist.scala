@@ -17,15 +17,3 @@ class Playlist(val songs: List[Song]) {
   }
 
 }
-
-object Playlist {
-
-  def makeIncubator(songs: List[Song]): List[Double] => Playlist = {
-    genes: List[Double] => {
-      // Apply the Song incubator for each gene
-      val songIncubator = Song.makeIncubator(songs)
-      new Playlist(genes.map((gene: Double) => songIncubator(List(gene))))
-    }
-  }
-
-}
