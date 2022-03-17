@@ -11,7 +11,7 @@ class Song(val title: String, val artist: String, val youtubeId: String, val rat
 
   def averageEnergyRating(): Double = {
     // This is an example of calling your average function to get the average energy rating of a song
-    Statistics.average(this.ratings, (rating: SongRating) => rating.energy)
+    Statistics.average(this.ratings, (rating: SongRating) => rating.energyLevel)
   }
 
   // TODO: Uncomment this method after writing Statistics.bayesianAverage
